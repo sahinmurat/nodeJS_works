@@ -1,13 +1,15 @@
-const express = require('express');
+const express = require("express");
+const path = require("path")
 
-const app = express()
-const port = 5000;
-const host = "http://localhost"
+const port = process.env.port || 5001;
 
-app.get("/", (req, res)=>{
-    res.send('hello from exprss')
+const app = express();
+
+app.get("/", (req, res) => {
+    console.log('come here');
+    res.sendFile(path.join(__dirname,'about.html'));
 })
 
 app.listen(port, ()=> {
-    console.log(`listen ${host}:${port}`)
+    console.log(`I am listening ${port}` )
 })

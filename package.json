@@ -2,18 +2,26 @@
   "name": "node_works",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "start":"nodemon index",
+    "start" : "nodemon node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahinmurat/nodeJS_works.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahinmurat/nodeJS_works/issues"
+  },
+  "homepage": "https://github.com/sahinmurat/nodeJS_works#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "2.0.6"
   }
 }
