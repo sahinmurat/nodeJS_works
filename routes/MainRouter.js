@@ -4,10 +4,10 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
     console.log('main');
-    res.render("main", {name : "Murat"})
+    res.render("main", {name : req.query.name})
 })
 
-router.get("/add", (req, res) => {
+router.get("/main", (req, res) => {
     console.log('main add');
     res.send("main add");
 })
