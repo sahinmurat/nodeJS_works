@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
     console.log('main');
-    res.send("main")
+    res.render("main", {name : "Murat"})
 })
 
 router.get("/add", (req, res) => {
